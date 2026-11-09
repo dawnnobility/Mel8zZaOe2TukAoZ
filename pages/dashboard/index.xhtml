@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - SIGAP Demo</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/shell.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/components.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/responsive.css" media="screen and (max-width: 900px)" />
+    <link rel="stylesheet" type="text/css" href="../../css/mobile.css" media="screen and (max-width: 560px)" />
+</head>
+<body class="aplikasi" data-page="dashboard" data-akar="../../">
+
+<div id="bingkai">
+    <div id="sisi"></div>
+    <div id="atas"></div>
+
+    <div id="lembar">
+        <div id="kanvas">
+            <div id="pesan-flash"></div>
+
+            <div class="kepala">
+                <div class="judul">
+                    <h1>Dashboard fasilitas</h1>
+                    <p class="keterangan" id="ket-dashboard">Memuat data demo.</p>
+                </div>
+                <div class="aksi">
+                    <a class="btn" href="../laporan-baru/index.xhtml">Laporan baru</a>
+                </div>
+            </div>
+
+            <div class="strip" id="strip-dashboard"></div>
+
+            <div class="baris">
+                <div class="kolom k-66">
+                    <div class="panel">
+                        <div class="panel-kepala">
+                            <h2>Antrian penanganan</h2>
+                            <span class="tautan"><a href="../laporan/index.xhtml">Semua laporan</a></span>
+                        </div>
+                        <div class="panel-isi panel-isi-tanpa">
+                            <div class="gulir-tabel">
+                                <table class="tabel" id="tabel-dashboard"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kolom k-34">
+                    <div class="panel">
+                        <div class="panel-kepala">
+                            <h2 id="judul-samping">Ringkasan</h2>
+                        </div>
+                        <div class="panel-isi" id="panel-samping"></div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-kepala">
+                            <h2>Aktivitas terbaru</h2>
+                        </div>
+                        <div class="panel-isi" id="aktivitas"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kaki-lembar">
+                <span class="kiri">SIGAP Demo &#183; Biro Sarana dan Prasarana</span>
+                <span class="kanan">Data contoh di peramban</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/data.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laporan - SIGAP Demo</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/shell.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/components.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/responsive.css" media="screen and (max-width: 900px)" />
+    <link rel="stylesheet" type="text/css" href="../../css/mobile.css" media="screen and (max-width: 560px)" />
+</head>
+<body class="aplikasi" data-page="laporan" data-akar="../../">
+
+<div id="bingkai">
+    <div id="sisi"></div>
+    <div id="atas"></div>
+
+    <div id="lembar">
+        <div id="kanvas">
+            <div id="pesan-flash"></div>
+
+            <div class="kepala">
+                <div class="judul">
+                    <h1>Laporan</h1>
+                    <p class="keterangan">Seluruh tiket gangguan fasilitas yang dapat Anda lihat.</p>
+                </div>
+                <div class="aksi">
+                    <a class="btn" href="../laporan-baru/index.xhtml">Laporan baru</a>
+                </div>
+            </div>
+
+            <div class="tab" id="tab-laporan">
+                <a href="#" data-status="semua" class="pilih">Semua
+                    <span class="jumlah-tab" data-hitung="semua"></span></a>
+                <a href="#" data-status="aktif">Aktif
+                    <span class="jumlah-tab" data-hitung="aktif"></span></a>
+                <a href="#" data-status="selesai">Selesai
+                    <span class="jumlah-tab" data-hitung="selesai"></span></a>
+                <a href="#" data-status="ditolak">Ditolak
+                    <span class="jumlah-tab" data-hitung="ditolak"></span></a>
+            </div>
+
+            <div class="penyaring">
+                <div class="field">
+                    <label for="saring-prioritas">Prioritas</label>
+                    <select id="saring-prioritas" class="select">
+                        <option value="">Semua prioritas</option>
+                        <option value="kritis">Kritis</option>
+                        <option value="tinggi">Tinggi</option>
+                        <option value="sedang">Sedang</option>
+                        <option value="rendah">Rendah</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="saring-kategori">Kategori</label>
+                    <select id="saring-kategori" class="select">
+                        <option value="">Semua kategori</option>
+                        <option value="Kelistrikan">Kelistrikan</option>
+                        <option value="Air dan Sanitasi">Air dan Sanitasi</option>
+                        <option value="AC dan Ventilasi">AC dan Ventilasi</option>
+                        <option value="Perabot dan Interior">Perabot dan Interior</option>
+                        <option value="Jaringan dan IT">Jaringan dan IT</option>
+                        <option value="Kebersihan">Kebersihan</option>
+                        <option value="Keamanan">Keamanan</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="cari-laporan">Cari</label>
+                    <input type="text" id="cari-laporan" class="input cari"
+                           size="24" maxlength="60" placeholder="Kode, judul, atau gedung" />
+                </div>
+                <button type="button" class="btn btn-garis btn-kecil tombol" id="terapkan">Terapkan</button>
+                <a href="#" class="reset" id="atur-ulang">Atur ulang</a>
+                <span class="hitung" id="hitung-laporan"></span>
+            </div>
+
+            <div class="panel">
+                <div class="panel-isi panel-isi-tanpa">
+                    <div class="gulir-tabel">
+                        <table class="tabel" id="tabel-laporan"></table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kaki-lembar">
+                <span class="kiri">SIGAP Demo &#183; Biro Sarana dan Prasarana</span>
+                <span class="kanan">Data contoh di peramban</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/data.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

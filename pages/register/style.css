@@ -1,0 +1,22 @@
+/*
+ * style.css halaman daftar akun demo.
+ */
+
+#kerangka-masuk {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+#panel-form {
+    padding-top: 30px;
+    padding-bottom: 26px;
+}
+
+#panel-form .pilihan-baris {
+    margin: 4px 0 16px;
+}
+
+#panel-form .pilihan-baris label {
+    font-size: 12.5px;
+    line-height: 1.5;
+}

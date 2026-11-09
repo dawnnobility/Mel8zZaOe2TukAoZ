@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIGAP - Sistem Informasi Gangguan dan Perbaikan Fasilitas UAJY</title>
+    <meta name="description" content="Laporkan gangguan fasilitas kampus Universitas Atma Jaya Yogyakarta dan pantau penanganannya dalam satu tiket." />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/components.css" />
+    <link rel="stylesheet" type="text/css" href="css/landing.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen and (max-width: 900px)" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 560px)" />
+</head>
+<body class="halaman-utama">
+
+<div id="kepala-utama">
+    <div class="wadah">
+        <a href="index.xhtml" id="logo-utama">
+            <img src="assets/logos/logo-uajy-horizontal.png"
+                 alt="Universitas Atma Jaya Yogyakarta" width="214" height="30" />
+        </a>
+        <ul id="nav-utama">
+            <li><a href="#isi-tiket">Isi tiket</a></li>
+            <li><a href="#cara-kerja">Cara kerja</a></li>
+            <li><a href="#kategori">Kategori</a></li>
+            <li><a href="#peran">Peran</a></li>
+            <li class="masuk-nav"><a href="pages/login/index.xhtml">Masuk</a></li>
+            <li class="tombol-nav"><a href="pages/register/index.xhtml">Daftar</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="pembuka">
+    <div class="wadah">
+        <div class="pembuka-kiri">
+            <h1 class="gerak">Fasilitas kampus, satu tiket.</h1>
+            <p class="pembuka-sub gerak">SIGAP mencatat gangguan listrik, air, AC, perabot, dan
+                jaringan di lingkungan Universitas Atma Jaya Yogyakarta &#8212; dari laporan
+                pertama sampai pekerjaan ditutup teknisi.</p>
+            <p class="pembuka-aksi gerak">
+                <a class="btn" href="pages/register/index.xhtml">Buat laporan pertama</a>
+                <a class="tautan-datar" href="pages/login/index.xhtml">Sudah punya akun</a>
+            </p>
+            <p class="pembuka-catatan">Wajib akun kampus. Setiap tiket menyimpan ruang, foto,
+                titik lokasi, dan riwayat penanganan.</p>
+
+            <ul class="angka-pembuka">
+                <li>
+                    <span class="n">8</span>
+                    <span class="l">kategori gangguan</span>
+                </li>
+                <li>
+                    <span class="n">4</span>
+                    <span class="l">tahap penanganan</span>
+                </li>
+                <li>
+                    <span class="n">4&#8211;72</span>
+                    <span class="l">jam target waktu</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pembuka-kanan">
+            <figure class="foto-pembuka">
+                <img src="assets/foto/kampus-3-hero.jpg"
+                     alt="Gedung Kampus III Santo Bonaventura Universitas Atma Jaya Yogyakarta"
+                     width="860" height="1075" />
+                <figcaption>
+                    <span class="label-foto">Kampus III Santo Bonaventura</span>
+                    <span class="kredit-foto">Foto: Jejemrgrtha, CC BY-SA 4.0</span>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="bagian" id="isi-tiket">
+    <div class="wadah">
+        <h2 class="gerak">Yang tercatat di setiap tiket</h2>
+        <p class="pengantar gerak">Laporan tidak berhenti sebagai pesan singkat. Tiket menyimpan
+            semua keterangan yang dibutuhkan admin dan teknisi untuk bekerja.</p>
+
+        <div class="isi-tiket">
+            <div class="butir">
+                <h3>Fasilitas dan ruang</h3>
+                <p>Setiap laporan terhubung ke kode fasilitas, gedung, dan lantai yang terdaftar,
+                    sehingga teknisi langsung tahu harus ke mana.</p>
+            </div>
+            <div class="butir">
+                <h3>Kategori dan prioritas</h3>
+                <p>Delapan kategori gangguan dengan empat tingkat prioritas. Prioritas menentukan
+                    target waktu penanganan yang dipantau sistem.</p>
+            </div>
+            <div class="butir">
+                <h3>Foto dan titik lokasi</h3>
+                <p>Pelapor dapat melampirkan foto kondisi dan mengambil koordinat lokasi dari
+                    perangkat, lalu menandai patokan ruang yang mudah dikenali.</p>
+            </div>
+            <div class="butir">
+                <h3>Riwayat yang terbuka</h3>
+                <p>Setiap perubahan status disertai catatan, waktu, dan nama petugas. Pelapor
+                    dapat mengikuti perjalanan tiket tanpa bertanya ulang.</p>
+            </div>
+        </div>
+
+        <div class="dua-layar">
+            <div class="layar layar-form gerak" data-ui="true">
+                <div class="layar-kepala">
+                    <span class="layar-judul">Lapor gangguan</span>
+                    <span class="layar-langkah">Langkah 1 dari 2</span>
+                </div>
+                <div class="layar-isi">
+                    <p class="layar-label">Fasilitas</p>
+                    <p class="layar-nilai">Laboratorium Jaringan &#183; TA-305</p>
+
+                    <p class="layar-label">Kategori</p>
+                    <p class="layar-nilai">Kelistrikan</p>
+
+                    <p class="layar-label">Prioritas</p>
+                    <p><span class="tanda prioritas-tinggi"><span class="kotak"></span>Tinggi</span></p>
+
+                    <p class="layar-label">Foto kondisi</p>
+                    <div class="kotak-unggah">Pilih berkas foto &#183; JPG atau PNG, maksimal 2 MB</div>
+                </div>
+                <div class="layar-kaki">
+                    <span class="kiri">Titik lokasi terekam</span>
+                    <span class="kanan">-7.7821, 110.4096</span>
+                </div>
+            </div>
+
+            <div class="layar layar-tiket gerak" data-ui="true">
+                <div class="atas">
+                    <span class="kode">SGP-2026-0142</span>
+                    <span class="status"><span class="kotak"></span><span id="status-tiket">Dikerjakan</span></span>
+                </div>
+                <div class="isi">
+                    <p class="lokasi">Laboratorium Jaringan TA-305 &#183; Lantai 3</p>
+                    <h3>Stop kontak terasa panas dan berbau</h3>
+                    <p class="catatan" id="catatan-tiket">Teknisi memeriksa jalur kabel dan mengganti
+                        stop kontak. Area diberi penanda agar tidak dipakai sementara.</p>
+                    <ul class="langkah" id="langkah-tiket">
+                        <li><button type="button" data-tahap="0" aria-pressed="false">Baru</button></li>
+                        <li><button type="button" data-tahap="1" aria-pressed="false">Ditugaskan</button></li>
+                        <li><button type="button" data-tahap="2" aria-pressed="true" class="pilih">Dikerjakan</button></li>
+                        <li><button type="button" data-tahap="3" aria-pressed="false">Selesai</button></li>
+                    </ul>
+                    <p class="petunjuk">Klik tahap untuk melihat catatan. <span id="waktu-tiket">Diperbarui 20 menit lalu</span></p>
+                </div>
+                <div class="kaki">
+                    <span class="kiri">Pelapor: <span id="pelapor-tiket">Aditya N.</span></span>
+                    <span class="kanan">Teknisi: <span id="petugas-tiket">Y. Bagas</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bagian" id="cara-kerja">
+    <div class="wadah">
+        <h2 class="gerak">Empat tahap, satu riwayat</h2>
+        <p class="pengantar gerak">Alur yang sama dipakai untuk semua gangguan, dari lampu yang
+            padam sampai lift yang perlu vendor luar.</p>
+
+        <div class="langkah-kerja">
+            <div class="langkah gerak">
+                <h3>Lapor</h3>
+                <p>Pelapor memilih fasilitas, menuliskan gangguan, menetapkan prioritas, dan
+                    melampirkan foto bila perlu.</p>
+            </div>
+            <div class="langkah gerak">
+                <h3>Verifikasi</h3>
+                <p>Admin memeriksa kelengkapan dan menduplikasi laporan. Laporan yang sah masuk
+                    antrian penanganan.</p>
+            </div>
+            <div class="langkah gerak">
+                <h3>Kerjakan</h3>
+                <p>Admin menugaskan teknisi. Teknisi mencatat pemeriksaan, bahan, dan kendala
+                    langsung pada tiket.</p>
+            </div>
+            <div class="langkah gerak">
+                <h3>Tutup</h3>
+                <p>Pekerjaan diuji bersama pelapor, lalu tiket ditutup dengan catatan akhir dan
+                    status target waktu.</p>
+            </div>
+        </div>
+
+        <div class="antrian gerak" data-ui="true">
+            <div class="antrian-kepala">
+                <span class="antrian-judul">Antrian fasilitas hari ini</span>
+                <span class="antrian-waktu">Diperbarui 09.42</span>
+            </div>
+            <div class="gulir-tabel">
+                <table class="antrian-tabel">
+                    <tr>
+                        <th>Kode</th>
+                        <th class="opsional">Fasilitas</th>
+                        <th>Prioritas</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td class="kode">SGP-2026-0141</td>
+                        <td class="opsional">Perpustakaan &#183; Lantai 2</td>
+                        <td><span class="tanda prioritas-sedang"><span class="kotak"></span>Sedang</span></td>
+                        <td><span class="tanda status-dikerjakan"><span class="kotak"></span>Dikerjakan</span></td>
+                    </tr>
+                    <tr>
+                        <td class="kode">SGP-2026-0139</td>
+                        <td class="opsional">Ruang Kuliah TA-201</td>
+                        <td><span class="tanda prioritas-tinggi"><span class="kotak"></span>Tinggi</span></td>
+                        <td><span class="tanda status-ditugaskan"><span class="kotak"></span>Ditugaskan</span></td>
+                    </tr>
+                    <tr>
+                        <td class="kode">SGP-2026-0136</td>
+                        <td class="opsional">Toilet Gedung Bonaventura</td>
+                        <td><span class="tanda prioritas-rendah"><span class="kotak"></span>Rendah</span></td>
+                        <td><span class="tanda status-selesai"><span class="kotak"></span>Selesai</span></td>
+                    </tr>
+                </table>
+            </div>
+            <p class="antrian-kaki">Contoh tampilan antrian admin. Data sebenarnya tersimpan
+                di basis data kampus.</p>
+        </div>
+    </div>
+</div>
+
+<div class="bagian" id="kategori">
+    <div class="wadah">
+        <h2 class="gerak">Delapan kategori gangguan</h2>
+        <p class="pengantar gerak">Pilih kategori yang paling dekat. Admin dapat menyesuaikan kategori
+            saat verifikasi bila laporan masuk ke kelompok lain.</p>
+
+        <ul class="daftar-kategori">
+            <li class="gerak">
+                <h3>Kelistrikan</h3>
+                <p>Lampu padam, stop kontak panas, MCB turun, dan instalasi yang tidak stabil.</p>
+            </li>
+            <li class="gerak">
+                <h3>Air dan Sanitasi</h3>
+                <p>Kran bocor, kloset tersumbat, saluran air mampet, dan kerusakan wastafel.</p>
+            </li>
+            <li class="gerak">
+                <h3>AC dan Ventilasi</h3>
+                <p>AC tidak dingin, menetes, bergetar, atau ventilasi ruangan yang tersumbat.</p>
+            </li>
+            <li class="gerak">
+                <h3>Perabot dan Interior</h3>
+                <p>Kursi patah, meja goyang, pintu macet, dan kerusakan plafon atau kaca.</p>
+            </li>
+            <li class="gerak">
+                <h3>Jaringan dan IT</h3>
+                <p>Wi-Fi lambat, proyektor tidak tersambung, dan perangkat ruang yang bermasalah.</p>
+            </li>
+            <li class="gerak">
+                <h3>Kebersihan</h3>
+                <p>Sampah menumpuk, tumpahan di koridor, dan area yang perlu pembersihan khusus.</p>
+            </li>
+            <li class="gerak">
+                <h3>Keamanan</h3>
+                <p>Kunci hilang, pintu tidak dapat dikunci, dan akses ruang yang perlu diperiksa.</p>
+            </li>
+            <li class="gerak">
+                <h3>Lainnya</h3>
+                <p>Kerusakan yang belum masuk kategori di atas, termasuk lift dan peralatan aula.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="bagian" id="peran">
+    <div class="wadah">
+        <h2 class="gerak">Tiga pihak, satu alur kerja</h2>
+        <p class="pengantar gerak">Setiap peran melihat layar yang berbeda, tetapi bekerja pada tiket
+            yang sama.</p>
+
+        <div class="peran">
+            <div class="kolom-peran gerak">
+                <h3>Pelapor</h3>
+                <p>Mahasiswa, dosen, dan staf yang menemukan gangguan di ruang kampus.</p>
+                <ul class="fakta">
+                    <li>Membuat dan memantau tiket sendiri</li>
+                    <li>Melampirkan foto dan titik lokasi</li>
+                    <li>Membatalkan tiket yang belum diverifikasi</li>
+                </ul>
+            </div>
+            <div class="kolom-peran gerak">
+                <h3>Teknisi</h3>
+                <p>Petugas teknik yang mengerjakan perbaikan sesuai penugasan admin.</p>
+                <ul class="fakta">
+                    <li>Melihat tugas beserta target waktu</li>
+                    <li>Mencatat pemeriksaan dan bahan</li>
+                    <li>Menutup tiket setelah pekerjaan diuji</li>
+                </ul>
+            </div>
+            <div class="kolom-peran gerak">
+                <h3>Admin Fasilitas</h3>
+                <p>Biro Sarana dan Prasarana yang menjaga antrian dan data fasilitas.</p>
+                <ul class="fakta">
+                    <li>Verifikasi, penugasan, dan penutupan tiket</li>
+                    <li>Mengelola data gedung dan ruang</li>
+                    <li>Memantau beban teknisi dan target waktu</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="penutup">
+    <div class="wadah">
+        <div class="plat-putih gerak">
+            <img src="assets/logos/logo-uajy-vertical-stack.png"
+                 alt="Universitas Atma Jaya Yogyakarta" width="150" height="74" />
+        </div>
+        <div class="ajakan gerak">
+            <h2>Satu pintu untuk seluruh fasilitas kampus.</h2>
+            <p>Masuk dengan akun kampus untuk membuat tiket baru atau memantau laporan
+                yang sudah Anda kirim.</p>
+            <a class="btn btn-emas" href="pages/login/index.xhtml">Masuk ke SIGAP</a>
+            <a class="tautan-terang" href="pages/register/index.xhtml">Daftar akun</a>
+        </div>
+    </div>
+</div>
+
+<div id="kaki-utama">
+    <div class="wadah">
+        <div class="merek-kaki">
+            <img src="assets/logos/logo-uajy.png" alt="Lambang Universitas Atma Jaya Yogyakarta" width="30" height="36" />
+            <span class="nama">SIGAP</span>
+            <p>Sistem Informasi Gangguan dan Perbaikan Fasilitas<br />
+               Biro Sarana dan Prasarana, Universitas Atma Jaya Yogyakarta<br />
+               Kampus III, Jl. Babarsari No. 43, Yogyakarta</p>
+            <p class="kredit-foto">Foto: &#8220;Kampus 3 Santo Bonaventura&#8221; oleh Jejemrgrtha,
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>,
+                via Wikimedia Commons.</p>
+        </div>
+        <div class="tautan-kaki">
+            <ul>
+                <li><span class="judul">Aplikasi</span></li>
+                <li><a href="pages/login/index.xhtml">Masuk</a></li>
+                <li><a href="pages/register/index.xhtml">Daftar akun</a></li>
+            </ul>
+            <ul>
+                <li><span class="judul">Pelajari</span></li>
+                <li><a href="#isi-tiket">Isi tiket</a></li>
+                <li><a href="#cara-kerja">Cara kerja</a></li>
+            </ul>
+            <ul>
+                <li><span class="judul">Bantuan</span></li>
+                <li><a href="pages/login/index.xhtml">Panduan pengguna</a></li>
+                <li><a href="#kategori">Kategori gangguan</a></li>
+            </ul>
+        </div>
+        <div class="bersih"></div>
+        <div class="hak">
+            <span class="kiri">&#169; 2026 Universitas Atma Jaya Yogyakarta.</span>
+            <span class="kanan">Dibangun untuk lingkungan perkuliahan.</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/landing.js"></script>
+</body>
+</html>

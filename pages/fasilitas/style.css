@@ -1,0 +1,55 @@
+/*
+ * style.css halaman fasilitas.
+ */
+
+#form-fasilitas .field {
+    margin-bottom: 12px;
+}
+
+#form-fasilitas .textarea {
+    min-height: 62px;
+    font-size: 12.5px;
+}
+
+#form-fasilitas .dua-kolom .field {
+    margin-bottom: 8px;
+}
+
+.aksi-baris {
+    white-space: nowrap;
+}
+
+.tautan-kecil:link,
+.tautan-kecil:visited {
+    font-size: 12px;
+    color: #0d3b66;
+    text-decoration: none;
+}
+
+.tautan-kecil:hover {
+    text-decoration: underline;
+}
+
+.form-sebaris {
+    display: inline;
+    margin-left: 8px;
+}
+
+.tautan-hapus {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #a3271f;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.tautan-hapus:hover {
+    text-decoration: underline;
+}
+
+#form-fasilitas input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: -1px;
+}

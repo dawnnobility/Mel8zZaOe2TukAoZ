@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laporan Baru - SIGAP Demo</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/shell.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/components.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/responsive.css" media="screen and (max-width: 900px)" />
+    <link rel="stylesheet" type="text/css" href="../../css/mobile.css" media="screen and (max-width: 560px)" />
+</head>
+<body class="aplikasi" data-page="laporan-baru" data-akar="../../">
+
+<div id="bingkai">
+    <div id="sisi"></div>
+    <div id="atas"></div>
+
+    <div id="lembar">
+        <div id="kanvas">
+            <div id="pesan-flash"></div>
+
+            <div class="kepala">
+                <div class="judul">
+                    <h1>Laporan baru</h1>
+                    <p class="keterangan">Pilih fasilitas, tuliskan gangguan, lalu tentukan prioritasnya.</p>
+                </div>
+                <div class="aksi">
+                    <a class="btn btn-garis" href="../laporan/index.xhtml">Kembali ke daftar</a>
+                </div>
+            </div>
+
+            <form id="form-laporan" action="#" method="post">
+                <div class="baris">
+                    <div class="kolom k-66">
+                        <fieldset>
+                            <legend>Gangguan</legend>
+                            <p class="bantuan-legend">Pilih fasilitas yang paling dekat dengan lokasi gangguan.</p>
+
+                            <div class="field">
+                                <label for="fasilitas_id">Fasilitas dan ruang <span class="wajib">*</span></label>
+                                <select name="fasilitas_id" id="fasilitas_id" class="select"></select>
+                            </div>
+
+                            <div class="dua-kolom">
+                                <div class="field">
+                                    <label for="kategori">Kategori <span class="wajib">*</span></label>
+                                    <select name="kategori" id="kategori" class="select">
+                                        <option value="">Pilih kategori</option>
+                                        <option value="Kelistrikan">Kelistrikan</option>
+                                        <option value="Air dan Sanitasi">Air dan Sanitasi</option>
+                                        <option value="AC dan Ventilasi">AC dan Ventilasi</option>
+                                        <option value="Perabot dan Interior">Perabot dan Interior</option>
+                                        <option value="Jaringan dan IT">Jaringan dan IT</option>
+                                        <option value="Kebersihan">Kebersihan</option>
+                                        <option value="Keamanan">Keamanan</option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label for="prioritas">Prioritas <span class="wajib">*</span></label>
+                                    <select name="prioritas" id="prioritas" class="select">
+                                        <option value="rendah">Rendah &#8212; tidak mengganggu kegiatan</option>
+                                        <option value="sedang" selected="selected">Sedang &#8212; mengganggu sebagian kegiatan</option>
+                                        <option value="tinggi">Tinggi &#8212; kegiatan tidak dapat berjalan</option>
+                                        <option value="kritis">Kritis &#8212; ada risiko keselamatan</option>
+                                    </select>
+                                    <p class="bantuan">Kritis: 4 jam. Tinggi: 8 jam. Sedang: 24 jam. Rendah: 72 jam.</p>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="judul">Judul laporan <span class="wajib">*</span></label>
+                                <input type="text" name="judul" id="judul" class="input"
+                                       size="50" maxlength="140"
+                                       placeholder="Contoh: Lampu ruang TA-201 mati sebagian" />
+                            </div>
+
+                            <div class="field">
+                                <label for="deskripsi">Uraian kondisi <span class="wajib">*</span></label>
+                                <textarea name="deskripsi" id="deskripsi" class="textarea" rows="6" cols="60"
+                                          maxlength="1200"></textarea>
+                                <p class="bantuan">Sebutkan sejak kapan, bagian mana yang rusak, dan dampaknya.</p>
+                            </div>
+
+                            <div class="field">
+                                <label for="foto">Foto kondisi (opsional)</label>
+                                <input type="file" name="foto" id="foto" class="unggah"
+                                       accept="image/jpeg,image/png,image/webp" />
+                                <p class="bantuan">Untuk demo, foto disimpan di peramban bila ukurannya di bawah 400 KB.</p>
+                                <div id="pratinjau-foto" class="pratinjau-demo"></div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="kolom k-34">
+                        <fieldset>
+                            <legend>Lokasi</legend>
+                            <p class="bantuan-legend">Koordinat membantu teknisi menemukan titik gangguan.</p>
+
+                            <div class="field">
+                                <label for="lokasi_nama">Patokan lokasi</label>
+                                <input type="text" name="lokasi_nama" id="lokasi_nama" class="input"
+                                       size="30" maxlength="160"
+                                       placeholder="Contoh: dekat papan informasi sayap timur" />
+                            </div>
+
+                            <div class="field">
+                                <label for="lat">Koordinat</label>
+                                <input type="text" name="lat" id="lat" class="input input-baca"
+                                       maxlength="20" readonly="readonly" />
+                                <input type="text" name="lng" id="lng" class="input input-baca"
+                                       maxlength="20" readonly="readonly" />
+                                <p class="bantuan">Diisi otomatis setelah tombol lokasi ditekan.</p>
+                            </div>
+
+                            <p class="tombol-lokasi">
+                                <button type="button" id="ambil-lokasi" class="btn btn-garis btn-penuh">
+                                    Ambil lokasi saat ini
+                                </button>
+                            </p>
+
+                            <p class="status-lokasi" id="status-lokasi">Lokasi belum diambil.</p>
+                            <p class="tautan-peta" id="tautan-peta"></p>
+                        </fieldset>
+
+                        <div class="kotak-ingat">
+                            <strong>Sebelum mengirim</strong>
+                            <ul class="fakta">
+                                <li>Pastikan ruang yang dipilih sudah benar.</li>
+                                <li>Satu tiket untuk satu gangguan.</li>
+                                <li>Laporan palsu dapat dinonaktifkan admin.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="galat-teks" id="galat-laporan"></p>
+
+                <p class="kirim-laporan">
+                    <button type="submit" class="btn">Kirim laporan</button>
+                    <a class="btn btn-garis" href="../dashboard/index.xhtml">Batal</a>
+                </p>
+            </form>
+
+            <div class="kaki-lembar">
+                <span class="kiri">SIGAP Demo &#183; Biro Sarana dan Prasarana</span>
+                <span class="kanan">Data contoh di peramban</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/data.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

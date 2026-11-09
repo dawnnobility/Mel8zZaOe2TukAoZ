@@ -1,0 +1,87 @@
+/*
+ * style.css dashboard.
+ */
+
+.saring-cepat {
+    padding: 12px 18px 10px;
+    border-bottom: 1px solid #edf1f4;
+    background-color: #fbfcfd;
+}
+
+.saring-cepat .label-saring {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: #4a5865;
+}
+
+.saring-cepat .input {
+    width: 280px;
+    max-width: 100%;
+    height: 32px;
+    font-size: 12.5px;
+}
+
+.sub-baris {
+    display: block;
+    font-size: 11.5px;
+    color: #4a5865;
+    margin-top: 1px;
+}
+
+.beban-baris {
+    margin-bottom: 14px;
+}
+
+.beban-baris:last-child {
+    margin-bottom: 0;
+}
+
+.beban-baris .nama-teknisi {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #24384a;
+}
+
+.beban-baris .jumlah-teknisi {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: #4a5865;
+}
+
+.aktivitas {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aktivitas li {
+    margin: 0 0 12px;
+    padding: 0;
+    font-size: 12.5px;
+    line-height: 1.5;
+}
+
+.aktivitas li:last-child {
+    margin-bottom: 0;
+}
+
+.aktivitas .waktu {
+    display: block;
+    font-size: 11px;
+    color: #4a5865;
+}
+
+.aktivitas .isi-aktivitas {
+    color: #33475a;
+}
+
+.aktivitas .mono {
+    color: #46545f;
+}
+
+.baris-antrian.tersembunyi {
+    display: none;
+}

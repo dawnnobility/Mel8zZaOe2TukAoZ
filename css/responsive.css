@@ -1,0 +1,307 @@
+/*
+ * responsive.css
+ * Dimuat melalui atribut media pada elemen link:
+ * media="screen and (max-width: 900px)".
+ * Berisi penyesuaian kerangka dan komponen untuk layar sempit.
+ */
+
+body.aplikasi {
+    background-color: #ffffff;
+}
+
+#sisi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 252px;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 24px;
+    background-color: #e9eef3;
+    border-right: 1px solid #d8e1e9;
+    display: none;
+    z-index: 20;
+}
+
+body.nav-terbuka #sisi {
+    display: block;
+}
+
+#atas {
+    margin-left: 0;
+    padding-left: 12px;
+    background-color: #e9eef3;
+    border-bottom: 1px solid #dfe6ec;
+}
+
+#tombol-menu {
+    display: block;
+}
+
+#atas .lingkup {
+    display: none;
+}
+
+#atas .kanan .tanggal {
+    display: none;
+}
+
+#lembar {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    min-height: 480px;
+}
+
+#kanvas {
+    padding: 20px 18px 36px;
+}
+
+.kepala .judul {
+    float: none;
+    max-width: 100%;
+}
+
+.kepala .aksi {
+    float: none;
+    padding-top: 12px;
+}
+
+.kepala .aksi .btn {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.strip .sel {
+    width: 50%;
+    border-left: 1px solid #edf1f4;
+}
+
+.strip .sel:nth-child(3) {
+    border-left: 0;
+}
+
+.strip.tiga .sel {
+    width: 50%;
+}
+
+.strip.dua .sel {
+    width: 100%;
+    border-left: 0;
+    border-top: 1px solid #edf1f4;
+}
+
+.strip.dua .sel:first-child {
+    border-top: 0;
+}
+
+.k-2,
+.k-3,
+.k-4,
+.k-5,
+.k-60,
+.k-40,
+.k-66,
+.k-34,
+.k-70,
+.k-30 {
+    width: 100%;
+}
+
+.kolom {
+    padding-bottom: 2px;
+}
+
+.baris {
+    margin: 0;
+}
+
+.kolom {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.penyaring .field {
+    margin-bottom: 8px;
+}
+
+.penyaring .cari {
+    width: 100%;
+}
+
+.penyaring .field {
+    float: none;
+    margin-right: 0;
+}
+
+.penyaring .tombol,
+.penyaring .reset,
+.penyaring .hitung {
+    float: none;
+    padding-top: 0;
+    margin: 6px 0 0;
+}
+
+.dua-kolom .field,
+.tiga-kolom .field {
+    width: 100%;
+    float: none;
+}
+
+#kerangka-masuk {
+    margin: 20px auto;
+    max-width: 94%;
+}
+
+#panel-merek {
+    width: 100%;
+    min-height: 0;
+    padding: 18px 20px;
+}
+
+#panel-merek .plat {
+    float: left;
+    width: 120px;
+    padding: 10px;
+    margin-right: 16px;
+}
+
+#panel-merek .plat img {
+    width: 100px;
+}
+
+#panel-merek h2 {
+    float: none;
+    font-size: 17px;
+    margin: 0 0 4px;
+    padding-top: 4px;
+}
+
+#panel-merek p,
+#panel-merek .daftar-cek,
+#panel-merek .kaki-panel {
+    display: none;
+}
+
+#panel-form {
+    width: 100%;
+    padding: 24px 22px 26px;
+}
+
+.dua-kolom {
+    margin: 0;
+}
+
+.panel .tabel th,
+.panel .tabel td {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   Halaman utama
+   -------------------------------------------------------------------------- */
+
+#kepala-utama {
+    padding: 14px 0;
+}
+
+#logo-utama img {
+    width: 190px;
+}
+
+#nav-utama li {
+    margin-left: 16px;
+    font-size: 13px;
+}
+
+#pembuka {
+    padding: 64px 0 56px;
+}
+
+.pembuka-kiri {
+    float: none;
+    width: 100%;
+    padding: 0;
+}
+
+.pembuka-kiri h1 {
+    font-size: 40px;
+    max-width: 620px;
+}
+
+.pembuka-kiri .pembuka-sub {
+    font-size: 16px;
+    max-width: 560px;
+}
+
+.pembuka-kanan {
+    float: none;
+    width: 100%;
+    max-width: 520px;
+    margin: 34px auto 0;
+}
+
+.bagian {
+    padding: 64px 0;
+}
+
+.bagian h2 {
+    font-size: 28px;
+}
+
+.bagian .pengantar {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.dua-layar {
+    max-width: 560px;
+}
+
+.layar {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.layar-form {
+    margin-right: 0;
+}
+
+.langkah-kerja .langkah {
+    width: 50%;
+    padding-bottom: 26px;
+}
+
+.peran .kolom-peran {
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+#penutup .plat-putih {
+    float: none;
+    width: 180px;
+    margin-bottom: 24px;
+}
+
+#penutup .ajakan {
+    float: none;
+    width: 100%;
+    padding: 0;
+}
+
+#penutup h2 {
+    font-size: 26px;
+}
+
+#kaki-utama .merek-kaki {
+    float: none;
+    width: 100%;
+}
+
+#kaki-utama .tautan-kaki {
+    float: none;
+    width: 100%;
+    margin-top: 26px;
+}

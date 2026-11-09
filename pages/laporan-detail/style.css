@@ -1,0 +1,86 @@
+/*
+ * style.css halaman detail tiket.
+ */
+
+.uraian {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #24384a;
+    margin-bottom: 16px;
+}
+
+.foto-laporan {
+    margin: 0 0 16px;
+    padding: 8px;
+    border: 1px solid #e2e8ed;
+    border-radius: 8px;
+    background-color: #f8fafb;
+}
+
+.foto-laporan img {
+    display: block;
+    max-width: 100%;
+    max-height: 380px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.foto-laporan .teks-kecil {
+    display: block;
+}
+
+.lokasi-laporan {
+    padding-top: 13px;
+    border-top: 1px solid #edf1f4;
+}
+
+.lokasi-laporan .judul-kecil {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 11px;
+    color: #4a5865;
+}
+
+.lokasi-laporan p {
+    margin: 0;
+    font-size: 13px;
+    color: #33475a;
+}
+
+.lokasi-laporan .koordinat {
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.riwayat-panel {
+    margin-top: 22px;
+}
+
+.aksi-tiket {
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #edf1f4;
+}
+
+.aksi-tiket:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.aksi-tiket .field {
+    margin-bottom: 10px;
+}
+
+.aksi-tiket .textarea {
+    min-height: 74px;
+    font-size: 12.5px;
+}
+
+.aksi-tiket .btn {
+    font-size: 12.5px;
+}
+
+.tiket-isi h1 {
+    font-size: 18px;
+}

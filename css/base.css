@@ -1,0 +1,230 @@
+/*
+ * base.css
+ * Fondasi tampilan SIGAP: warna, tipografi, dan elemen dasar.
+ * Palet diambil dari logo Universitas Atma Jaya Yogyakarta:
+ * navy untuk tinta dan aksi, emas untuk penanda perhatian.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "IBM Plex Sans", "Segoe UI", Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    color: #10202e;
+    background-color: #e9eef3;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10202e;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    margin: 0 0 12px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul,
+ol {
+    margin: 0 0 12px 18px;
+    padding: 0;
+}
+
+li {
+    margin: 4px 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    font-weight: 500;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e3e9ee;
+    margin: 20px 0;
+}
+
+/* --------------------------------------------------------------------------
+   Tautan
+   -------------------------------------------------------------------------- */
+
+a:link {
+    color: #0d3b66;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3d5b77;
+}
+
+a:hover {
+    color: #a9761a;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: #0d3b66;
+    outline: 2px solid #0d3b66;
+    outline-offset: 2px;
+}
+
+a:active {
+    color: #08294a;
+}
+
+a.garis-bawah:link,
+a.garis-bawah:visited {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   Fokus keyboard
+   -------------------------------------------------------------------------- */
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #0d3b66;
+    outline-offset: 1px;
+}
+
+/* --------------------------------------------------------------------------
+   Pemilihan teks dan batang gulir
+   -------------------------------------------------------------------------- */
+
+::selection {
+    background-color: #f0cd8a;
+    color: #10202e;
+}
+
+/* --------------------------------------------------------------------------
+   Utilitas umum
+   -------------------------------------------------------------------------- */
+
+.bersih {
+    clear: both;
+}
+
+.teks-kecil {
+    font-size: 12px;
+}
+
+.teks-redup {
+    color: #46545f;
+}
+
+.teks-tengah {
+    text-align: center;
+}
+
+.teks-kanan {
+    text-align: right;
+}
+
+.tebal {
+    font-weight: 600;
+}
+
+.mono {
+    font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+    font-size: 0.94em;
+    letter-spacing: -0.01em;
+}
+
+.sembunyi {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.hanya-pembaca {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.wadah {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --------------------------------------------------------------------------
+   Angka
+   -------------------------------------------------------------------------- */
+
+.angka {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+}

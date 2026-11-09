@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masuk - SIGAP Demo</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/components.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/responsive.css" media="screen and (max-width: 900px)" />
+    <link rel="stylesheet" type="text/css" href="../../css/mobile.css" media="screen and (max-width: 560px)" />
+</head>
+<body class="masuk" data-akar="../../">
+
+<div id="kerangka-masuk">
+    <div id="panel-merek">
+        <div class="plat">
+            <img src="../../assets/logos/logo-uajy-vertical-stack.png"
+                 alt="Universitas Atma Jaya Yogyakarta" width="148" height="73" />
+        </div>
+        <h2>Satu tiket untuk setiap gangguan fasilitas.</h2>
+        <p>Demo SIGAP meniru alur kerja Biro Sarana dan Prasarana: laporan masuk,
+            diverifikasi admin, dikerjakan teknisi, lalu ditutup dengan catatan.</p>
+        <ul class="daftar-cek">
+            <li>Data disimpan di peramban, bukan di server.</li>
+            <li>Tiga peran dengan layar berbeda.</li>
+            <li>Bisa dicoba tanpa memasang basis data.</li>
+        </ul>
+        <p class="kaki-panel">Universitas Atma Jaya Yogyakarta<br />Demo statis untuk GitHub Pages</p>
+    </div>
+
+    <div id="panel-form">
+        <h1>Masuk ke SIGAP</h1>
+        <p class="pembuka">Gunakan salah satu akun demo di bawah. Tidak perlu mendaftar
+            untuk mencoba.</p>
+
+        <div id="pesan-flash"></div>
+
+        <form id="form-masuk" action="#" method="post">
+            <div class="field">
+                <label for="username">Username atau email</label>
+                <input type="text" name="username" id="username" class="input"
+                       size="30" maxlength="60" autocomplete="username" />
+            </div>
+
+            <div class="field">
+                <label for="password">Kata sandi</label>
+                <input type="password" name="password" id="password" class="input"
+                       size="30" maxlength="80" autocomplete="current-password" />
+            </div>
+
+            <p class="galat-teks" id="galat-masuk"></p>
+
+            <p><button type="submit" class="btn btn-penuh">Masuk</button></p>
+        </form>
+
+        <p class="kaki-form">Belum punya akun?
+            <a href="../register/index.xhtml">Daftar akun pelapor</a></p>
+
+        <div class="akun-demo">
+            <strong>Akun demo</strong>
+            <ul>
+                <li><span class="mono">admin / admin123</span> &#8212; admin fasilitas</li>
+                <li><span class="mono">teknisi / teknisi123</span> &#8212; teknisi</li>
+                <li><span class="mono">mahasiswa / mahasiswa123</span> &#8212; pelapor</li>
+                <li><span class="mono">dosen / dosen123</span> &#8212; pelapor</li>
+            </ul>
+        </div>
+
+        <p class="kaki-form"><a href="../../index.xhtml">Kembali ke halaman utama</a></p>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/data.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

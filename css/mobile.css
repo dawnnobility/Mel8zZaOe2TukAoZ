@@ -1,0 +1,310 @@
+/*
+ * mobile.css
+ * Dimuat melalui atribut media pada elemen link:
+ * media="screen and (max-width: 560px)".
+ */
+
+#atas .kanan .nama-pengguna {
+    display: none;
+}
+
+#kanvas {
+    padding: 16px 18px 30px;
+}
+
+#atas {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.kaki-lembar {
+    font-size: 12.5px;
+}
+
+.kepala h1 {
+    font-size: 21px;
+}
+
+.strip .sel {
+    width: 100%;
+    border-left: 0;
+    border-top: 1px solid #edf1f4;
+    padding: 12px 16px;
+}
+
+.strip .sel:first-child {
+    border-top: 0;
+}
+
+.strip.tiga .sel {
+    width: 100%;
+}
+
+.strip .nilai {
+    font-size: 23px;
+}
+
+.panel-kepala {
+    padding: 12px 14px 11px;
+}
+
+.panel-kepala h2,
+.panel-kepala h3 {
+    float: none;
+}
+
+.panel-kepala .tautan {
+    float: none;
+    display: block;
+    margin-top: 2px;
+}
+
+.panel-isi {
+    padding: 14px;
+}
+
+.panel .tabel th:first-child,
+.panel .tabel td:first-child {
+    padding-left: 14px;
+}
+
+.panel .tabel th:last-child,
+.panel .tabel td:last-child {
+    padding-right: 14px;
+}
+
+.penyaring {
+    padding: 8px 0 12px;
+}
+
+.tab a:link,
+.tab a:visited {
+    float: none;
+    display: inline-block;
+}
+
+#panel-merek .plat {
+    display: none;
+}
+
+#panel-merek {
+    padding: 14px 18px;
+}
+
+#panel-merek h2 {
+    font-size: 16px;
+}
+
+#panel-form {
+    padding: 20px 16px 22px;
+}
+
+#panel-form h1 {
+    font-size: 21px;
+}
+
+.kepala .aksi .btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 8px;
+}
+
+.tiket-atas .kode,
+.tiket-atas .status-di {
+    float: none;
+    display: block;
+}
+
+.tiket-atas .status-di {
+    margin-top: 3px;
+}
+
+.populer .kolom {
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Halaman utama
+   -------------------------------------------------------------------------- */
+
+body.halaman-utama .wadah {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#kepala-utama {
+    padding: 12px 0 10px;
+}
+
+#logo-utama {
+    float: none;
+    display: inline-block;
+    padding-top: 0;
+}
+
+#logo-utama img {
+    width: 176px;
+}
+
+#nav-utama {
+    float: none;
+    clear: both;
+    margin-top: 10px;
+}
+
+#nav-utama li {
+    display: inline-block;
+    margin: 0 10px 6px 0;
+    font-size: 12px;
+}
+
+#nav-utama li.tombol-nav a:link,
+#nav-utama li.tombol-nav a:visited {
+    padding: 6px 12px;
+}
+
+#pembuka {
+    padding: 84px 0 42px;
+}
+
+.pembuka-kiri h1 {
+    font-size: 32px;
+    line-height: 1.08;
+}
+
+.pembuka-kiri .pembuka-sub {
+    font-size: 15.5px;
+}
+
+.pembuka-kiri .pembuka-aksi .btn {
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+.pembuka-kiri .pembuka-aksi .tautan-datar {
+    margin-left: 12px;
+    font-size: 13px;
+}
+
+.angka-pembuka .n {
+    font-size: 24px;
+}
+
+.angka-pembuka .l {
+    font-size: 13px;
+}
+
+.pembuka-kanan {
+    margin-top: 26px;
+}
+
+.bagian {
+    padding: 50px 0;
+}
+
+.bagian h2 {
+    font-size: 24px;
+}
+
+.bagian .pengantar {
+    font-size: 14.5px;
+}
+
+.isi-tiket .butir {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.isi-tiket .butir p,
+.langkah-kerja .langkah p,
+.daftar-kategori p,
+.peran p {
+    font-size: 16px;
+}
+
+.dua-layar {
+    margin-top: 8px;
+}
+
+.layar-tiket .langkah li {
+    width: 50%;
+    padding-bottom: 4px;
+}
+
+.antrian-kepala {
+    padding: 12px 14px;
+}
+
+.antrian-waktu {
+    display: none;
+}
+
+.antrian-tabel th,
+.antrian-tabel td {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.antrian-tabel .opsional {
+    display: none;
+}
+
+.langkah-kerja .langkah {
+    width: 100%;
+    padding-bottom: 22px;
+}
+
+.daftar-kategori li {
+    width: 100%;
+    padding-bottom: 18px;
+}
+
+#penutup {
+    padding: 42px 0;
+}
+
+#penutup h2 {
+    font-size: 23px;
+}
+
+#penutup p {
+    font-size: 14px;
+}
+
+#penutup .plat-putih {
+    width: 150px;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+#penutup .plat-putih img {
+    width: 118px;
+}
+
+#penutup .tautan-terang:link,
+#penutup .tautan-terang:visited {
+    display: block;
+    margin: 12px 0 0;
+}
+
+#kaki-utama {
+    padding: 30px 0 20px;
+}
+
+#kaki-utama .tautan-kaki ul {
+    width: 50%;
+    margin-bottom: 14px;
+}
+
+#kaki-utama .hak {
+    margin-left: -18px;
+    margin-right: -18px;
+    padding: 13px 18px;
+    font-size: 13px;
+}
+
+#kaki-utama .hak .kanan {
+    float: none;
+    display: block;
+    margin-top: 4px;
+}

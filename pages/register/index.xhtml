@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daftar Akun - SIGAP Demo</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/components.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/responsive.css" media="screen and (max-width: 900px)" />
+    <link rel="stylesheet" type="text/css" href="../../css/mobile.css" media="screen and (max-width: 560px)" />
+</head>
+<body class="masuk" data-akar="../../">
+
+<div id="kerangka-masuk">
+    <div id="panel-merek">
+        <div class="plat">
+            <img src="../../assets/logos/logo-uajy-vertical-stack.png"
+                 alt="Universitas Atma Jaya Yogyakarta" width="148" height="73" />
+        </div>
+        <h2>Laporkan sekali, pantau sampai selesai.</h2>
+        <p>Akun pelapor dipakai untuk membuat tiket, melampirkan foto, dan mengikuti
+            riwayat penanganan dari awal sampai teknisi menutup pekerjaan.</p>
+        <ul class="daftar-cek">
+            <li>Satu akun untuk seluruh gedung kampus.</li>
+            <li>Username dan email tidak boleh sama.</li>
+            <li>Kata sandi minimal delapan karakter.</li>
+        </ul>
+        <p class="kaki-panel">Universitas Atma Jaya Yogyakarta<br />Demo statis untuk GitHub Pages</p>
+    </div>
+
+    <div id="panel-form">
+        <h1>Daftar akun pelapor</h1>
+        <p class="pembuka">Data akun disimpan di peramban Anda. Gunakan username dan email
+            yang belum dipakai akun demo lain.</p>
+
+        <div id="pesan-flash"></div>
+
+        <form id="form-daftar" action="#" method="post">
+            <div class="dua-kolom">
+                <div class="field">
+                    <label for="nama">Nama lengkap <span class="wajib">*</span></label>
+                    <input type="text" name="nama" id="nama" class="input" size="30" maxlength="100" />
+                </div>
+                <div class="field">
+                    <label for="username">Username <span class="wajib">*</span></label>
+                    <input type="text" name="username" id="username" class="input" size="30" maxlength="40" />
+                </div>
+            </div>
+
+            <div class="dua-kolom">
+                <div class="field">
+                    <label for="email">Email <span class="wajib">*</span></label>
+                    <input type="text" name="email" id="email" class="input" size="30" maxlength="120" />
+                </div>
+                <div class="field">
+                    <label for="telepon">Telepon</label>
+                    <input type="text" name="telepon" id="telepon" class="input" size="20" maxlength="25" />
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="unit">Fakultas atau unit <span class="wajib">*</span></label>
+                <select name="unit" id="unit" class="select">
+                    <option value="">Pilih fakultas atau unit</option>
+                    <option value="Fakultas Teknologi Industri">Fakultas Teknologi Industri</option>
+                    <option value="Fakultas Ekonomi">Fakultas Ekonomi</option>
+                    <option value="Fakultas Hukum">Fakultas Hukum</option>
+                    <option value="Fakultas Ilmu Sosial dan Ilmu Politik">Fakultas Ilmu Sosial dan Ilmu Politik</option>
+                    <option value="Fakultas Teknik">Fakultas Teknik</option>
+                    <option value="Biro Sarana dan Prasarana">Biro Sarana dan Prasarana</option>
+                    <option value="Unit Layanan Teknis">Unit Layanan Teknis</option>
+                </select>
+            </div>
+
+            <div class="dua-kolom">
+                <div class="field">
+                    <label for="password">Kata sandi <span class="wajib">*</span></label>
+                    <input type="password" name="password" id="password" class="input" size="30" maxlength="80" />
+                </div>
+                <div class="field">
+                    <label for="password2">Ulangi kata sandi <span class="wajib">*</span></label>
+                    <input type="password" name="password2" id="password2" class="input" size="30" maxlength="80" />
+                </div>
+            </div>
+
+            <div class="pilihan-baris">
+                <label><input type="checkbox" name="setuju" id="setuju" value="1" />
+                    Saya memastikan data ini benar dan bukan laporan palsu.</label>
+            </div>
+
+            <p class="galat-teks" id="galat-daftar"></p>
+
+            <p><button type="submit" class="btn btn-penuh">Daftar sekarang</button></p>
+        </form>
+
+        <p class="kaki-form">Sudah punya akun?
+            <a href="../login/index.xhtml">Masuk di sini</a></p>
+        <p class="kaki-form"><a href="../../index.xhtml">Kembali ke halaman utama</a></p>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/data.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fasilitas - SIGAP Demo</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/shell.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/components.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/responsive.css" media="screen and (max-width: 900px)" />
+    <link rel="stylesheet" type="text/css" href="../../css/mobile.css" media="screen and (max-width: 560px)" />
+</head>
+<body class="aplikasi" data-page="fasilitas" data-akar="../../">
+
+<div id="bingkai">
+    <div id="sisi"></div>
+    <div id="atas"></div>
+
+    <div id="lembar">
+        <div id="kanvas">
+            <div id="pesan-flash"></div>
+
+            <div class="kepala">
+                <div class="judul">
+                    <h1>Fasilitas</h1>
+                    <p class="keterangan">Data gedung, ruang, dan area yang dapat dipilih pelapor saat membuat tiket.</p>
+                </div>
+                <div class="aksi">
+                    <a class="btn btn-garis" href="index.xhtml">Formulir kosong</a>
+                </div>
+            </div>
+
+            <div class="baris">
+                <div class="kolom k-34">
+                    <div class="panel">
+                        <div class="panel-kepala">
+                            <h2 id="judul-form">Tambah fasilitas</h2>
+                        </div>
+                        <div class="panel-isi">
+                            <form action="#" method="post" id="form-fasilitas">
+                                <input type="hidden" name="id" id="id" value="" />
+
+                                <div class="field">
+                                    <label for="kode">Kode fasilitas <span class="wajib">*</span></label>
+                                    <input type="text" name="kode" id="kode" class="input" maxlength="20"
+                                           value="" placeholder="Contoh: TA-201" />
+                                    <p class="bantuan">Huruf kapital, angka, dan tanda hubung.</p>
+                                    <p class="galat-teks" id="galat-kode"></p>
+                                </div>
+
+                                <div class="field">
+                                    <label for="nama">Nama ruang <span class="wajib">*</span></label>
+                                    <input type="text" name="nama" id="nama" class="input" maxlength="120"
+                                           value="" placeholder="Contoh: Ruang Kuliah TA-201" />
+                                    <p class="galat-teks" id="galat-nama"></p>
+                                </div>
+
+                                <div class="field">
+                                    <label for="gedung">Gedung <span class="wajib">*</span></label>
+                                    <input type="text" name="gedung" id="gedung" class="input" maxlength="80"
+                                           value="" placeholder="Contoh: Gedung Thomas Aquinas" />
+                                    <p class="galat-teks" id="galat-gedung"></p>
+                                </div>
+
+                                <div class="dua-kolom">
+                                    <div class="field">
+                                        <label for="lantai">Lantai <span class="wajib">*</span></label>
+                                        <input type="text" name="lantai" id="lantai" class="input" maxlength="20"
+                                               value="" placeholder="2" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="kategori">Jenis ruang <span class="wajib">*</span></label>
+                                        <select name="kategori" id="kategori" class="select">
+                                            <option value="Ruang Kuliah">Ruang Kuliah</option>
+                                            <option value="Laboratorium">Laboratorium</option>
+                                            <option value="Ruang Dosen">Ruang Dosen</option>
+                                            <option value="Toilet">Toilet</option>
+                                            <option value="Aula">Aula</option>
+                                            <option value="Area Umum">Area Umum</option>
+                                            <option value="Lainnya">Lainnya</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label for="keterangan">Keterangan</label>
+                                    <textarea name="keterangan" id="keterangan" class="textarea" rows="3" cols="30"
+                                              maxlength="200"></textarea>
+                                </div>
+
+                                <div class="field">
+                                    <label for="aktif"><input type="checkbox" name="aktif" id="aktif" value="1"
+                                        checked="checked" />
+                                        Fasilitas aktif dan dapat dipilih pelapor</label>
+                                </div>
+
+                                <p class="galat-teks" id="galat-fasilitas"></p>
+
+                                <p>
+                                    <button type="submit" class="btn" id="tombol-simpan">Tambah fasilitas</button>
+                                    <a class="btn btn-garis" href="index.xhtml" id="batal-edit"
+                                       style="display:none">Batal</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kolom k-66">
+                    <div class="panel">
+                        <div class="panel-kepala">
+                            <h2>Daftar fasilitas</h2>
+                            <span class="tautan" id="hitung-fasilitas">Memuat data</span>
+                        </div>
+                        <div class="gulir-tabel">
+                            <table class="tabel" id="tabel-fasilitas"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kaki-lembar">
+                <span class="kiri">SIGAP Demo &#183; Biro Sarana dan Prasarana</span>
+                <span class="kanan">Data contoh di peramban</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/data.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
